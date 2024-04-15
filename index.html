@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/29cfd90f91.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="page">
+
+            <div class="timer">
+                <div class="increase">
+                    <i class="fas fa-angle-up" id="up1"></i><i class="fas fa-angle-up" id="up2"></i><i class="fas fa-angle-up" id="up3"></i>
+                </div>
+                <div class="time">
+                <input type="number" name="hour" id="hour" max="24" min="0" value=0 readonly><span>:</span><input type="number" name="minute" id="minute" max="59" min="0" value=0 readonly><span>:</span><input type="number" name="second" id="second"  max="59" min="0" value=0 readonly>
+            </div>
+            <div class="decrease">
+                <i class="fas fa-angle-down" id="down1"></i><i class="fas fa-angle-down" id="down2"></i><i class="fas fa-angle-down" id="down3"></i>
+            </div>
+            <div class="button">
+                <i class="fas fa-redo" id="reset" onclick="location.reload()"></i><i class="fas fa-play" id="start" ></i><i class="fas fa-pause" id="pause"></i>
+            </div>
+            </div>
+            <audio id="ring" controls>
+                <source id="ringSound" src="ringSound.mp4" type="audio/mp4">
+            </audio>
+        </div>
+        <script src="./javaScript.js"></script>
+    </body>
+</html>
